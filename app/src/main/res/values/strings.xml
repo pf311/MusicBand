@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">MusicBand</string>
+    <string name="nom">Nom</string>
+    <string name="pr_nom">Prénom</string>
+    <string name="pseudo">Pseudo</string>
+    <string-array name="instruments">
+        <item >Guitare</item>
+        <item >Basse</item>
+        <item >Piano</item>
+        <item >Batterie</item>
+        <item >Violon</item>
+        <item >Trompette</item>
+        <item >Flûte</item>
+    </string-array>
+    <string-array name="musique">
+        <item >Rock</item>
+        <item >Blues</item>
+        <item >Funk</item>
+        <item >Classique</item>
+        <item >Country</item>
+        <item >Folk</item>
+        <item >Jazz</item>
+    </string-array>
+    <string-array name="niveau">
+        <item >Débutant</item>
+        <item >Confirmé</item>
+        <item >Expert</item>
+    </string-array>
 </resources>
+
