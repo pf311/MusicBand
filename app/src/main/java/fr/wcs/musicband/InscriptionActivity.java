@@ -1,9 +1,11 @@
 package fr.wcs.musicband;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -14,6 +16,7 @@ import java.util.List;
 public class InscriptionActivity extends AppCompatActivity {
 
     Spinner spinner;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,5 +38,16 @@ public class InscriptionActivity extends AppCompatActivity {
             }
         });
 
+        Button bConfirmer = findViewById(R.id.b_confirmer);
+        bConfirmer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent confirmer = new Intent(InscriptionActivity.this,MenuActivity.class);
+                startActivity(confirmer);
+            }
+        });
+
     }
+
+
 }
