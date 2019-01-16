@@ -32,7 +32,7 @@
         android:layout_marginBottom="8dp"
         android:outlineSpotShadowColor="@color/colorPrimaryDark"
         android:singleLine="true"
-        android:text="Créer un groupe"
+        android:text="@string/cr_er_un_groupe"
         android:textColor="@color/colorPrimaryDark"
         app:layout_constraintBottom_toTopOf="@+id/b_create_alive"
         app:layout_constraintEnd_toEndOf="parent"
