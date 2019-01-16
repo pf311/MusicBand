@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
         app:barrierDirection="top" />
 
-    <EditText
+    <TextView
         android:id="@+id/tv_description"
         android:layout_width="0dp"
         android:layout_height="158dp"
@@ -80,19 +80,8 @@
         android:gravity="start"
         android:hint="@string/description"
         android:inputType="textMultiLine"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/bComfirmer"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_name_group" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/decrivez_votre_groupe"
-        android:textColor="@android:color/background_dark"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_name_group" />
