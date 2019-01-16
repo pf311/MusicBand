@@ -3,6 +3,7 @@
     <string name="nom">Nom</string>
     <string name="pr_nom">Prénom</string>
     <string name="pseudo">Pseudo</string>
+    <string name="confirmer">Confirmer</string>
     <string-array name="instruments">
         <item >Guitare</item>
         <item >Basse</item>
