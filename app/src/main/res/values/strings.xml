@@ -4,6 +4,10 @@
     <string name="pr_nom">Prénom</string>
     <string name="pseudo">Pseudo</string>
     <string name="confirmer">Confirmer</string>
+    <string name="nom_du_groupe">Nom du groupe</string>
+    <string name="description">Description :</string>
+    <string name="annuler">Annuler</string>
+    <string name="decrivez_votre_groupe">Decrivez votre groupe</string>
     <string-array name="instruments">
         <item >Guitare</item>
         <item >Basse</item>
