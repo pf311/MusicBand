@@ -23,6 +23,7 @@
         <activity android:name=".MenuActivity" />
         <activity android:name=".CreateGroupActivity" />
         <activity android:name=".DescriptionActivity" />
+        <activity android:name=".FinishCreationActivity" />
     </application>
 
 </manifest>
