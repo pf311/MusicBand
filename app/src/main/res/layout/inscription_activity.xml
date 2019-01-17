@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InscriptionActivity">
+    tools:context=".InscriptionActivity"
+    android:background="@android:color/holo_blue_light">
 
     <TextView
         android:id="@+id/tvcreateacount"
@@ -39,7 +40,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/et_pseudo"
+                android:id="@+id/et_nom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="84dp"
@@ -52,10 +53,10 @@
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etPrenom" />
+                app:layout_constraintTop_toBottomOf="@+id/et_nom" />
 
             <EditText
-                android:id="@+id/etNom"
+                android:id="@+id/et_prenom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="84dp"
@@ -68,10 +69,10 @@
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etPrenom" />
+                app:layout_constraintTop_toBottomOf="@+id/et_nom" />
 
             <EditText
-                android:id="@+id/etPrenom"
+                android:id="@+id/et_pseudo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="84dp"
@@ -98,8 +99,7 @@
                 android:entries="@array/instruments"
                 android:inputType="textEmailAddress"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etMdpIns" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <Spinner
                 android:id="@+id/spin_two"
@@ -114,8 +114,7 @@
                 android:entries="@array/instruments"
                 android:inputType="textEmailAddress"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etMdpIns" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <Spinner
                 android:id="@+id/spin_three"
@@ -131,7 +130,7 @@
                 android:inputType="textEmailAddress"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etMdpIns" />
+                />
 
 
             <Spinner
@@ -147,11 +146,10 @@
                 android:entries="@array/niveau"
                 android:inputType="textEmailAddress"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etMdpIns" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <Button
-                android:id="@+id/bCreer"
+                android:id="@+id/b_confirmer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -164,6 +162,7 @@
                 android:paddingTop="8dp"
                 android:paddingRight="16dp"
                 android:paddingBottom="8dp"
+                android:text="@string/confirmer"
                 android:textColor="@color/colorPrimaryDark"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
