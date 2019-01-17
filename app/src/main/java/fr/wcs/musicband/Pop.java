@@ -1,5 +1,6 @@
 package fr.wcs.musicband;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
@@ -28,8 +29,9 @@ public class Pop extends Activity {
 
         getWindow().setLayout((int) (width * .8), (int) (height * .6));
 
-        Button ok = findViewById(R.id.button_ok);
+        final Button ok = findViewById(R.id.button_ok);
         ok.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 EditText etPseudo = findViewById(R.id.et_pseudo);
@@ -37,11 +39,16 @@ public class Pop extends Activity {
                 if (pseudo.isEmpty()) {
                     Toast.makeText(Pop.this, "Veuillez indiquer le peuso", Toast.LENGTH_LONG).show();
                 } else {
+                    TextView textView = (TextView) getLayoutInflater().inflate(R.layout.textview, null);
+                    textView.setText("");
                     for (int i = 0; i < pseudo.length(); i++) {
                         TextView tv = (TextView) getLayoutInflater().inflate(R.layout.textview, null);
-                        tv.setText(pseudo);
+                        tv.setText("Vous avez bien ajouté : " + pseudo);
                         constraintLayout.addView(tv);
                     }
+                    etPseudo.setEnabled(false);
+                    Button confirm = findViewById(R.id.buttonConfirm);
+                    confirm.setVisibility(View.VISIBLE);
 
                 }
             }
