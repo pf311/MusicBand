@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InscriptionActivity"
-    android:background="@color/blue">
+    android:background="@android:color/holo_blue_light">
 
     <TextView
         android:id="@+id/tvcreateacount"

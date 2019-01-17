@@ -9,6 +9,7 @@
     <string name="annuler">Annuler</string>
     <string name="decrivez_votre_groupe">Decrivez votre groupe</string>
     <string name="cr_er_un_groupe">Créer un groupe</string>
+    <string name="entrez_le_pseudo">Entrez le pseudo</string>
     <string-array name="instruments">
         <item >Guitare</item>
         <item >Basse</item>
