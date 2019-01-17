@@ -46,7 +46,11 @@ public class Pop extends Activity {
                         tv.setText("Vous avez bien ajouté : " + pseudo);
                         constraintLayout.addView(tv);
                     }
+                    etPseudo.setVisibility(View.GONE);
                     etPseudo.setEnabled(false);
+                    ok.setVisibility(View.GONE);
+                    TextView writePseudo = findViewById(R.id.tv_write_pseudo);
+                    writePseudo.setVisibility(View.GONE);
                     Button confirm = findViewById(R.id.buttonConfirm);
                     confirm.setVisibility(View.VISIBLE);
 
