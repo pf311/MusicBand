@@ -41,7 +41,7 @@
         app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <Button
-        android:id="@+id/b_community"
+        android:id="@+id/b_join_group"
         android:layout_width="334dp"
         android:layout_height="68dp"
         android:layout_marginStart="8dp"
