@@ -31,6 +31,8 @@ public class MyGroupAdapter extends ArrayAdapter {
         // Return the completed view to render on screen
         return convertView;
     }
+    
+
 }
 
 

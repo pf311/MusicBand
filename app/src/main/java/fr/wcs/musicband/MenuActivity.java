@@ -29,5 +29,14 @@ public class MenuActivity extends AppCompatActivity {
                     startActivity(newIntent);
                 }
             });
+
+            Button joinGroup = findViewById(R.id.b_join_group);
+            joinGroup.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MenuActivity.this, JoinGroupActivity.class);
+                    startActivity(intent);
+                }
+            });
         }
 }
