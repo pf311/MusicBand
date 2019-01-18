@@ -20,5 +20,14 @@ public class MenuActivity extends AppCompatActivity {
                     startActivity(createGroup);
                 }
             });
+
+            Button bSee = findViewById(R.id.b_see_group);
+            bSee.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent newIntent = new Intent(MenuActivity.this, MyGroupActivity.class);
+                    startActivity(newIntent);
+                }
+            });
         }
 }

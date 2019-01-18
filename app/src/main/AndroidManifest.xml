@@ -26,6 +26,7 @@
         <activity android:name=".FinishCreationActivity" />
         <activity android:name=".Pop"
            android:theme="@style/AppTheme.CustomTheme" />
+        <activity android:name=".MyGroupActivity" />
     </application>
 
 </manifest>
