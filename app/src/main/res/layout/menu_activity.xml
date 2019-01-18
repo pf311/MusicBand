@@ -34,7 +34,7 @@
         android:singleLine="true"
         android:text="@string/cr_er_un_groupe"
         android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toTopOf="@+id/b_create_alive"
+        app:layout_constraintBottom_toTopOf="@+id/b_see_group"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ib_profil"
@@ -53,11 +53,11 @@
         android:textColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b_create_alive" />
+        app:layout_constraintTop_toBottomOf="@+id/b_see_group" />
 
     <Button
 
-        android:id="@+id/b_create_alive"
+        android:id="@+id/b_see_group"
         android:layout_width="334dp"
         android:layout_height="68dp"
         android:layout_marginStart="8dp"
